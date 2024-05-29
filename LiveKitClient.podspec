@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
 
   spec.source_files = "Sources/**/*"
 
-  spec.dependency("LiveKitWebRTC", "~> 114.5735.18")
+  spec.dependency 'LiveKitWebRTC', :git => 'https://github.com/livekit/webrtc-xcframework.git'
   spec.dependency("SwiftProtobuf")
   spec.dependency("Logging")
   # spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
